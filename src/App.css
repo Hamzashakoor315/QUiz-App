@@ -1,0 +1,222 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #CCCCFF;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 400px;
+  width: 1000px;
+  background-color: white;
+  border-radius: 15px;
+  /* box box-shadow: ; */
+  box-shadow: 2px 2px 10px 1px #b32525;
+  overflow: hidden;
+  padding: 10px;
+  position: relative; 
+  max-width: 100%;
+  margin: 0 auto;
+}
+/* This code will make the container element 100% wide on screens that are 768px or less wide. */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  
+}
+
+/* This code will make the container element 500px wide at most. */
+.container {
+  max-width: 500px;
+}
+
+/* This code will make the container element 100% wide on screens that are 768px or less wide, and 500px wide on screens that are wider than 768px. */
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: fit-content;
+    max-height: fit-content;
+
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .container {
+    width: 500px;
+  }
+}
+
+
+.heading-txt{
+position: sticky;
+top: 0px;
+left: 0px;
+width: 100%;
+height: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+background: #ffffff;
+border-bottom: 1px solid #d5d5d5
+}
+.logo {
+  position: absolute; /* Position the logo absolutely within the container */
+  top: 4px; /* Adjust the top position as needed */
+  left: 20px; /* Adjust the left position as needed */
+  /* animation: moveLogo 3s linear infinite; Use the 'moveLogo' animation */
+  width: 40px; /* Adjust the width of the logo */
+  height: auto; /* Maintain aspect ratio */
+}
+
+@keyframes moveLogo {
+  0% {
+    transform: translateX(0); /* Start at the initial position */
+  }
+  50% {
+    transform: translateX(20px); /* Move right */
+  }
+  100% {
+    transform: translateX(0); /* Return to the initial position */
+  }
+}
+
+
+.question{
+  margin: 8px;
+  box-shadow: 0px 0px 10px 1px #19dddd;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 550;
+  font-family: 'Time new Roman', Times, serif;
+  min-width: 100%;
+  min-height: 90%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+#question-number{
+  margin-right: 5px;
+}
+
+.Options-container{
+  display: flex;
+  flex-direction: column;
+  margin: 6px 4px;
+  width: 100%;
+  padding: 20px;
+  
+  
+}
+
+.Options-btn{
+  box-shadow: 0px 0px 4px 1px rgb(128, 123, 123);
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+  margin: 5px;
+  min-height: 30px;
+  background-color: white;
+}
+.checked{
+  background-color: rgb(159, 84, 159);
+  color: white;
+  box-shadow: 3px 3px 4px 1px rgb(78, 69, 78);
+}
+
+.Options-btn:hover{
+  background-color: rgb(159, 84, 159);
+  color: white;
+}
+
+#next-button{
+  padding: 10px 20px;
+  border: none;
+  background-color: #111;
+  background-color: #276272;
+  color: white;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: 3px 3px 2px 1px rgb(127, 109, 109);
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  transition: 0.2s;
+  width: 100px;
+  position: absolute;
+  bottom: 15px;
+}
+#next-button:active{
+  box-shadow: none;
+}
+
+#next-play{
+  padding: 10px 20px;
+  border: none;
+  background-color: #111;
+  background-color: #607227;
+  color: white;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: 3px 3px 2px 1px rgb(127, 109, 109);
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  transition: 0.2s;
+  width: 400px;
+  position: absolute;
+  bottom: 15px;
+}
+#next-play:active{
+  box-shadow: none;
+}
+
+.show-score {
+  position: absolute;
+  top:20%;
+  font-size:20px;
+  text-align: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    .show-score {
+      font-size: 30px; /* Adjust the font size for smaller screens */
+      top: 20%; /* Adjust the vertical position if needed */
+    }
+    .container {
+      top: 00px; /* Adjust the top position for the logo */
+      left: 00px; /* Adjust the left position for the logo */
+      width: 300px;
+    }
+    .logo {
+      top: 10px; /* Adjust the top position for the logo */
+      left: 10px; /* Adjust the left position for the logo */
+      width: 30px; /* Adjust the width of the logo */
+    }
+  
+    #next-play {
+      width: 200px; /* Adjust the button width for smaller screens */
+    }
+    .container {
+      max-width: 100%;
+    }
+  }
+  
+  
+  

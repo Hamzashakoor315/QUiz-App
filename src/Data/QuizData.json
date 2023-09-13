@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "question": "What is the process of converting analog signals into digital data called?",
+        "Options" : [
+            "Encoding",
+            "Decoding",
+            "Encryption",
+            "Modulation"
+        ],
+        "answerIndex": 0
+    },
+    {
+        "id": 2,
+        "question": "What is the smallest unit of digital information?",
+        "Options": [
+            "Byte",
+            "Bit",
+            "Megabyte",
+            "Gigabyte"
+        ],
+        "answerIndex": 1
+    },
+    {
+        "id": 3,
+        "question": "Which programming language is used for web development?",
+        "Options": [
+            "PHP",
+            "Ruby",
+            "Swift",
+            "HTML"
+        ],
+        "answerIndex": 3
+    },
+    {
+        "id": 4,
+        "question": "What is the standard file format for images on the web?",
+        "Options": [
+            "PNG",
+            "PDF",
+            "TXT",
+            "DOC"
+        ],
+        "answerIndex": 0
+    },
+    {
+        "id": 5,
+        "question": "Which technology is used to track the location of a mobile device?",
+        "Options": [
+            "GPS",
+            "NFC",
+            "Wi-Fi",
+            "Bluetooth"
+        ],
+        "answerIndex": 0
+    }
+
+]
